@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({
     lg: 'h-14 px-10 text-lg',
   };
   
-  const combinedStyles = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
+  const combinedStyles = `${baseStyles} ${variantStyles[variant]} ${className} ${sizeStyles[size]}`;
   
   return (
     <button

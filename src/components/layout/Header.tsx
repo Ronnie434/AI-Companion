@@ -8,7 +8,7 @@ export const Header = () => {
         <Logo />
         <Button
           variant="ghost"
-          className="bg-white px-5 text-sm font-medium text-gray-900 hover:bg-gray-200"
+          className="!bg-white px-5 text-sm font-medium !text-gray-900 hover:!bg-gray-200"
         >
           Join Waitlist
         </Button>

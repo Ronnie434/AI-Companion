@@ -26,6 +26,12 @@ export const HeroSection = () => {
           <Button
             variant="secondary"
             className="h-12 w-full sm:w-auto px-8"
+            onClick={() => {
+              document.getElementById('how-it-works')?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }}
           >
             See how it works
           </Button>
