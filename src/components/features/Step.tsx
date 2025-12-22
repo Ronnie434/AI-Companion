@@ -6,13 +6,13 @@ interface StepProps {
 
 export const Step = ({ step }: StepProps) => {
   return (
-    <div className="relative flex flex-col items-center text-center gap-6">
-      <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-surface border border-white/10 text-white font-medium shadow-lg">
+    <div className="relative flex flex-col items-center gap-6 text-center">
+      <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-gray-300 bg-white font-medium text-gray-900 shadow-lg dark:border-white/10 dark:bg-surface dark:text-white">
         {step.number}
       </div>
       <div>
-        <h3 className="text-xl font-medium text-white mb-2">{step.title}</h3>
-        <p className="text-text-muted font-light leading-relaxed">{step.description}</p>
+        <h3 className="mb-2 text-xl font-medium text-gray-900 dark:text-white">{step.title}</h3>
+        <p className="font-light leading-relaxed text-gray-600 dark:text-text-muted">{step.description}</p>
       </div>
     </div>
   );

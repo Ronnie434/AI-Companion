@@ -10,13 +10,13 @@ const Button: React.FC<ButtonProps> = ({
   type = 'button',
 }) => {
   // Base styles
-  const baseStyles = 'font-medium transition-all duration-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/50';
+  const baseStyles = 'rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50';
   
   // Variant styles
   const variantStyles = {
-    primary: 'bg-primary text-background-dark shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:scale-105',
-    secondary: 'border border-white/10 bg-white/5 text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/20',
-    ghost: 'bg-transparent text-white hover:bg-white/5',
+    primary: 'bg-primary text-white shadow-lg shadow-primary/25 hover:scale-105 hover:shadow-xl hover:shadow-primary/30',
+    secondary: 'border border-gray-300 bg-gray-100 text-gray-900 backdrop-blur-sm hover:border-gray-400 hover:bg-gray-200 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:border-white/20 dark:hover:bg-white/10',
+    ghost: 'bg-transparent text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-white/5',
   };
   
   // Size styles

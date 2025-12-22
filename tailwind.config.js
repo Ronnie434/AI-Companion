@@ -10,13 +10,20 @@ export default {
       colors: {
         // Custom color palette
         "primary": "#5FA5F9",
+        "primary-dark": "#4A8FE7",
         "primary-content": "#ffffff",
-        "background-light": "#f8fafc",
+        "background-light": "#ffffff",
         "background-dark": "#0B0E11",
         "surface": "#15191E",
+        "surface-light": "#f8fafc",
         "surface-highlight": "#1E242C",
+        "surface-highlight-light": "#e2e8f0",
         "text-main": "#F1F5F9",
+        "text-main-light": "#1e293b",
         "text-muted": "#94A3B8",
+        "text-muted-light": "#64748b",
+        "border-light": "#e2e8f0",
+        "border-dark": "#1e293b",
       },
       fontFamily: {
         "sans": ["Inter", "sans-serif"],

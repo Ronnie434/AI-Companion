@@ -1,8 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className="border-t border-white/5 bg-background-dark py-12">
+    <footer className="border-t border-gray-200 bg-white py-12 dark:border-white/5 dark:bg-background-dark">
       <div className="mx-auto max-w-7xl px-6 text-center">
-        <p className="text-text-muted text-sm font-light">
+        <p className="text-sm font-light text-gray-600 dark:text-text-muted">
           © 2025 AI Companion. All rights reserved.
         </p>
       </div>

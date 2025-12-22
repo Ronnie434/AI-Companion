@@ -5,7 +5,7 @@ const Badge: React.FC<BadgeProps> = ({
   children,
   className = '',
 }) => {
-  const baseStyles = 'rounded-full py-1 px-4 border border-primary/20 bg-primary/5 text-primary uppercase tracking-widest text-xs font-medium';
+  const baseStyles = 'rounded-full border border-primary/20 bg-primary/5 px-4 py-1 text-xs font-medium uppercase tracking-widest text-primary';
   
   const combinedStyles = `${baseStyles} ${className}`;
   

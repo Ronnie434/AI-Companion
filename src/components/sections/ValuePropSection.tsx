@@ -2,17 +2,17 @@ import { Badge } from '../ui';
 
 export const ValuePropSection = () => {
   return (
-    <section className="py-32 px-6 bg-surface relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
-      <div className="mx-auto max-w-4xl text-center relative z-10">
+    <section className="relative overflow-hidden bg-gray-100 px-6 py-40 dark:bg-surface">
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-[100px]"></div>
+      <div className="relative z-10 mx-auto max-w-4xl text-center">
         <Badge className="mb-8">Proactive Intelligence</Badge>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-8">
+        <h2 className="mb-8 text-4xl font-normal tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"  style={{marginTop: "20px"}}>
           This app doesn't wait <br />
-          <span className="font-medium text-blue-100">for you to ask.</span>
+          <span className="font-medium text-blue-700 dark:text-blue-100">for you to ask.</span>
         </h2>
-        <p className="text-lg md:text-xl text-text-muted leading-relaxed font-light max-w-2xl mx-auto">
+        <p className="mx-auto max-w-2xl text-lg font-light leading-relaxed text-gray-600 md:text-xl dark:text-text-muted">
           Most apps react. This one anticipates. It remembers what you tell it, tracks time and patterns, and warns you{' '}
-          <span className="text-primary font-medium">before</span> things go wrong. No micromanagement. No constant prompting.
+          <span className="font-medium text-primary">before</span> things go wrong. No micromanagement. No constant prompting.
         </p>
       </div>
     </section>
