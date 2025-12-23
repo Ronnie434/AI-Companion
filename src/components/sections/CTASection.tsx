@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Input, Button } from '../ui';
 import { useWaitlist } from '../../hooks/useWaitlist';
+import { motion } from 'framer-motion';
 
 export const CTASection = () => {
   const [email, setEmail] = useState('');
@@ -25,7 +26,13 @@ export const CTASection = () => {
 
   return (
     <section className="bg-white px-6 py-32 text-center dark:bg-background-dark">
-      <div className="mx-auto max-w-3xl">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="mx-auto max-w-3xl"
+      >
         <h2 className="mb-10 text-4xl font-medium tracking-tight text-gray-900 md:text-5xl dark:text-white">
           Life already throws enough surprises.
         </h2>
@@ -76,7 +83,7 @@ export const CTASection = () => {
         <p className="text-sm font-light text-gray-600 dark:text-muted-foreground">
           We're building this carefully. No spam.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };
