@@ -1,18 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Input, Button } from '../ui';
 import { useWaitlist } from '../../hooks/useWaitlist';
 
 export const CTASection = () => {
   const [email, setEmail] = useState('');
-  const { isLoading, error, success, submitEmail } = useWaitlist();
+  const { isLoading, error, success, submitEmail, resetState } = useWaitlist();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     await submitEmail(email, 'cta');
-    if (success) {
-      setEmail('');
-    }
   };
+
+  // Auto-hide success message after 3 seconds
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        resetState(); // Clear success state
+        setEmail('');  // Clear email input
+      }, 3000); // 3 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [success, resetState]);
 
   return (
     <section className="bg-white px-6 py-32 text-center dark:bg-background-dark">
