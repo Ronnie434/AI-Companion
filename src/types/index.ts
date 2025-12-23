@@ -35,6 +35,7 @@ export interface ButtonProps {
   onClick?: () => void;
   className?: string;
   type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
 }
 
 export interface IconProps {

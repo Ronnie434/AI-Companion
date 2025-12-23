@@ -8,6 +8,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   className = '',
   type = 'button',
+  disabled,
 }) => {
   // Base styles
   const baseStyles = 'rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50';
@@ -32,6 +33,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       onClick={onClick}
+      disabled={disabled}
       className={combinedStyles}
       aria-label={typeof children === 'string' ? children : undefined}
     >

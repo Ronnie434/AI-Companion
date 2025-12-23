@@ -1,6 +1,9 @@
 import { Button } from '../ui';
+import { useWaitlistModal } from '../../contexts/WaitlistContext';
 
 export const HeroSection = () => {
+  const { openModal } = useWaitlistModal();
+  
   return (
     <section className="relative px-6 pb-20 pt-32 lg:pb-32 lg:pt-48">
       <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-background-dark">
@@ -19,6 +22,7 @@ export const HeroSection = () => {
         <div className="flex w-full flex-col gap-4 pt-4 sm:w-auto sm:flex-row">
           <Button
             variant="primary"
+            onClick={openModal}
             className="h-12 w-full px-8 shadow-[0_0_40px_-10px_rgba(95,165,249,0.3)] sm:w-auto"
           >
             Get Early Access
