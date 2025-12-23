@@ -73,7 +73,7 @@ export const CTASection = () => {
           </form>
         )}
         
-        <p className="text-sm font-light text-gray-600 dark:text-text-muted">
+        <p className="text-sm font-light text-gray-600 dark:text-muted-foreground">
           We're building this carefully. No spam.
         </p>
       </div>

@@ -3,7 +3,7 @@ import { steps } from '../../data/content';
 
 export const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="border-t border-gray-200 bg-gradient-to-b from-white to-gray-50 px-6 py-24 dark:border-white/5 dark:from-background-dark dark:to-surface">
+    <section id="how-it-works" className="border-t border-gray-200 bg-gradient-to-b from-white to-gray-50 px-6 py-24 dark:border-white/5 dark:from-background-dark dark:to-surface-dark">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-20 text-center text-3xl font-medium text-gray-900 dark:text-white">How it works</h2>
         <div className="relative grid grid-cols-1 gap-12 md:grid-cols-3">

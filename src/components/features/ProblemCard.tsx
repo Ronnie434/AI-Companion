@@ -12,7 +12,7 @@ export const ProblemCard = ({ problem }: ProblemCardProps) => {
         <Icon name={problem.icon} size={28} />
       </div>
       <h3 className="mb-3 text-xl font-medium text-gray-900 dark:text-white">{problem.title}</h3>
-      <p className="font-light leading-relaxed text-gray-600 dark:text-text-muted">{problem.description}</p>
+      <p className="font-light leading-relaxed text-gray-600 dark:text-muted-foreground">{problem.description}</p>
     </div>
   );
 };

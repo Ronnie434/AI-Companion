@@ -16,7 +16,7 @@ export const HeroSection = () => {
             surprised by life.
           </span>
         </h1>
-        <p className="max-w-2xl text-lg font-light leading-relaxed text-gray-600 md:text-xl dark:text-text-muted">
+        <p className="max-w-2xl text-lg font-light leading-relaxed text-gray-600 md:text-xl dark:text-muted-foreground">
           Your AI companion that remembers, tracks, and warns you about what's coming — before it becomes a problem.
         </p>
         <div className="flex w-full flex-col gap-4 pt-4 sm:w-auto sm:flex-row">

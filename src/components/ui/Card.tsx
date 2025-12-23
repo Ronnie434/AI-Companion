@@ -6,8 +6,8 @@ const Card: React.FC<CardProps> = ({
   className = '',
   hover = false,
 }) => {
-  const baseStyles = 'rounded-3xl border border-gray-200 bg-white transition-all duration-300 dark:border-white/5 dark:bg-white/[0.03]';
-  const hoverStyles = hover ? 'hover:bg-gray-50 dark:hover:bg-white/[0.06]' : '';
+  const baseStyles = 'rounded-2xl glass-card transition-all duration-300';
+  const hoverStyles = hover ? 'hover:-translate-y-1 hover:shadow-glow-sm hover:border-primary/20' : '';
   
   const combinedStyles = `${baseStyles} ${hoverStyles} ${className}`;
   

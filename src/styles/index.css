@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply antialiased bg-background-light text-zinc-900 dark:bg-background-dark dark:text-gray-100;
+  }
+
+  /* Custom scrollbar for Webkit */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-gray-600;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 dark:bg-black/40 dark:border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-xl border border-white/20 dark:bg-white/5 dark:border-white/10;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-dark to-secondary-dark dark:from-primary-light dark:to-secondary;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +48,7 @@ html {
 
 /* Fade-in animation */
 .fade-in-up {
-  animation: fadeUp 1s ease-out forwards;
+  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   opacity: 0;
   transform: translateY(20px);
 }

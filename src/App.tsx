@@ -16,18 +16,26 @@ function App() {
   return (
     <ThemeProvider>
       <WaitlistProvider>
-        <div className="relative flex min-h-screen w-full flex-col bg-white dark:bg-background-dark transition-colors">
-          <Header />
-          <main>
-            <HeroSection />
-            <ProblemsSection />
-            <ValuePropSection />
-            <FeaturesSection />
-            <HowItWorksSection />
-            <PrivacySection />
-            <CTASection />
-          </main>
-          <Footer />
+        <div className="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark text-zinc-900 dark:text-gray-100 transition-colors duration-300 overflow-x-hidden">
+           {/* Global Background Gradient Mesh */}
+           <div className="fixed inset-0 z-0 pointer-events-none">
+              <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/20 blur-[100px] animate-float" />
+              <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-secondary/20 blur-[100px] animate-float" style={{ animationDelay: '-3s' }} />
+           </div>
+
+          <div className="relative z-10 flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-grow">
+              <HeroSection />
+              <ProblemsSection />
+              <ValuePropSection />
+              <FeaturesSection />
+              <HowItWorksSection />
+              <PrivacySection />
+              <CTASection />
+            </main>
+            <Footer />
+          </div>
           <WaitlistModal />
         </div>
       </WaitlistProvider>

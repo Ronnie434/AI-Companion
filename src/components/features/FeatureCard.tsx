@@ -13,7 +13,7 @@ export const FeatureCard = ({ feature }: FeatureCardProps) => {
       </div>
       <div>
         <h3 className="mb-3 text-2xl font-medium text-gray-900 dark:text-white">{feature.title}</h3>
-        <p className="text-lg font-light leading-relaxed text-gray-600 dark:text-text-muted">
+        <p className="text-lg font-light leading-relaxed text-gray-600 dark:text-muted-foreground">
           <span className="font-normal text-gray-900 dark:text-white">{feature.highlight}</span> {feature.description}
         </p>
       </div>
