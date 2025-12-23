@@ -34,6 +34,8 @@ export const ValuePropSection = () => {
         >
           Most apps react. This one anticipates. It remembers what you tell it, tracks time and patterns, and warns you{' '}
           <span className="font-medium text-primary">before</span> things go wrong. No micromanagement. No constant prompting.
+          <br className="mb-4" />
+          You stay in control — the app stays quietly in the background until it matters.
         </motion.p>
       </div>
     </section>

@@ -7,12 +7,16 @@ export const WaitlistModal: React.FC = () => {
   const { isModalOpen, closeModal } = useWaitlistModal();
   const { isLoading, error, success, submitEmail, resetState } = useWaitlist();
   const [email, setEmail] = useState('');
+  const [primaryPain, setPrimaryPain] = useState('');
+  const [currentMethod, setCurrentMethod] = useState('');
 
   useEffect(() => {
     if (success) {
       const timer = setTimeout(() => {
         closeModal();
         setEmail('');
+        setPrimaryPain('');
+        setCurrentMethod('');
         resetState();
       }, 2000);
       return () => clearTimeout(timer);
@@ -39,7 +43,7 @@ export const WaitlistModal: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await submitEmail(email, 'header');
+    await submitEmail(email, 'header', primaryPain, currentMethod);
   };
 
   if (!isModalOpen) return null;
@@ -102,6 +106,52 @@ export const WaitlistModal: React.FC = () => {
                 className="w-full"
                 aria-label="Email address"
               />
+
+              <div className="space-y-2 text-left">
+                <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  What do you want help staying ahead of?
+                </label>
+                <select
+                  value={primaryPain}
+                  onChange={(e) => setPrimaryPain(e.target.value)}
+                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-gray-900 outline-none transition-all placeholder:text-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 dark:border-gray-800 dark:bg-gray-800 dark:text-white dark:focus:ring-blue-900"
+                  required
+                >
+                  <option value="" disabled>Select an option</option>
+                  <option value="Bills & due dates">Bills & due dates</option>
+                  <option value="Renewals & subscriptions">Renewals & subscriptions</option>
+                  <option value="Follow-ups with people">Follow-ups with people</option>
+                  <option value="Work tasks">Work tasks</option>
+                  <option value="Personal life admin">Personal life admin</option>
+                  <option value="Something else">Something else</option>
+                </select>
+              </div>
+
+              <div className="space-y-2 text-left">
+                <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  How do you handle it today?
+                </label>
+                <select
+                  value={currentMethod}
+                  onChange={(e) => setCurrentMethod(e.target.value)}
+                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-gray-900 outline-none transition-all placeholder:text-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 dark:border-gray-800 dark:bg-gray-800 dark:text-white dark:focus:ring-blue-900"
+                  required
+                >
+                  <option value="" disabled>Select an option</option>
+                  <option value="Notes app">Notes app</option>
+                  <option value="Calendar">Calendar</option>
+                  <option value="Reminders / To-do app">Reminders / To-do app</option>
+                  <option value="Spreadsheet">Spreadsheet</option>
+                  <option value="I mostly keep it in my head">I mostly keep it in my head</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div className="text-center">
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  We’ll only email when we’re ready to invite you. No spam.
+                </p>
+              </div>
               
               {error && (
                 <p className="text-sm text-red-600 dark:text-red-400" role="alert">

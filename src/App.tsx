@@ -7,6 +7,7 @@ import {
   HowItWorksSection,
   PrivacySection,
   CTASection,
+  FirstBetaSection,
 } from './components/sections';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { WaitlistProvider } from './contexts/WaitlistContext';
@@ -30,6 +31,7 @@ function App() {
               <ProblemsSection />
               <ValuePropSection />
               <FeaturesSection />
+              <FirstBetaSection />
               <HowItWorksSection />
               <PrivacySection />
               <CTASection />

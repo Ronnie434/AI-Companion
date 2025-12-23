@@ -37,7 +37,12 @@ export const PrivacySection = () => {
           <Icon name="shield_lock" className="text-[48px]" />
         </div>
         <h2 className="mb-4 text-3xl font-medium text-gray-900 dark:text-white">Your life data stays yours.</h2>
-        <p className="mb-12 text-lg font-light text-gray-600 dark:text-muted-foreground">We build for trust, not for advertisers.</p>
+        <p className="mb text-lg font-light text-gray-600 dark:text-muted-foreground">
+          We build for trust, not for advertisers.
+        </p>
+        <p className="mb-12 text-lg font-lighter text-gray-500 dark:text-gray-400">
+          You can review and delete anything you’ve saved at any time.
+        </p>
         <motion.div 
           variants={containerVariants}
           initial="hidden"

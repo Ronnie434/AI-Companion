@@ -79,13 +79,15 @@ app.post('/api/waitlist', async (req, res) => {
     // Append data to sheet
     const timestamp = new Date().toISOString();
     const userAgent = req.get('user-agent') || 'Unknown';
+    const primaryPain = req.body.primaryPain || '';
+    const currentMethod = req.body.currentMethod || '';
 
     await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: `${sheetName}!A:E`,
+      range: `${sheetName}!A:G`,
       valueInputOption: 'RAW',
       requestBody: {
-        values: [[timestamp, email.toLowerCase(), source, clientIp, userAgent]],
+        values: [[timestamp, email.toLowerCase(), source, clientIp, userAgent, primaryPain, currentMethod]],
       },
     });
 

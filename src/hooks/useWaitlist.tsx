@@ -4,7 +4,7 @@ interface UseWaitlistReturn {
   isLoading: boolean;
   error: string | null;
   success: boolean;
-  submitEmail: (email: string, source: string) => Promise<void>;
+  submitEmail: (email: string, source: string, primaryPain?: string, currentMethod?: string) => Promise<void>;
   resetState: () => void;
 }
 
@@ -13,7 +13,7 @@ export const useWaitlist = (): UseWaitlistReturn => {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  const submitEmail = async (email: string, source: string) => {
+  const submitEmail = async (email: string, source: string, primaryPain?: string, currentMethod?: string) => {
     setIsLoading(true);
     setError(null);
     setSuccess(false);
@@ -24,7 +24,7 @@ export const useWaitlist = (): UseWaitlistReturn => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, source }),
+        body: JSON.stringify({ email, source, primaryPain, currentMethod }),
       });
 
       const data = await response.json();

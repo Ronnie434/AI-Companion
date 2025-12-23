@@ -5,3 +5,4 @@ export { FeaturesSection } from './FeaturesSection';
 export { HowItWorksSection } from './HowItWorksSection';
 export { PrivacySection } from './PrivacySection';
 export { CTASection } from './CTASection';
+export { FirstBetaSection } from './FirstBetaSection';

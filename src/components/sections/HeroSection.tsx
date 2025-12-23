@@ -1,6 +1,7 @@
 import { Button } from '../ui';
 import { useWaitlistModal } from '../../contexts/WaitlistContext';
 import { motion } from 'framer-motion';
+import previewMock from '../../assets/preview_mock.png';
 
 export const HeroSection = () => {
   const { openModal } = useWaitlistModal();
@@ -57,6 +58,21 @@ export const HeroSection = () => {
             See how it works
           </Button>
         </motion.div>
+
+        <motion.div
+           initial={{ opacity: 0, y: 40 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.7, delay: 0.6 }}
+           className="relative mt-16 w-full max-w-5xl"
+         >
+           <div className="relative rounded-3xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 dark:bg-white/5 dark:ring-white/10 lg:rounded-[2.5rem] lg:p-4">
+             <img
+               src={previewMock}
+               alt="Preview of capture and daily brief screens"
+               className="rounded-2xl shadow-2xl ring-1 ring-gray-900/10 dark:ring-white/10 lg:rounded-[2rem]"
+             />
+           </div>
+         </motion.div>
       </div>
     </section>
   );
