@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Header, Footer } from './components/layout';
 import {
   HeroSection,
@@ -12,8 +13,53 @@ import {
 import { ThemeProvider } from './contexts/ThemeContext';
 import { WaitlistProvider } from './contexts/WaitlistContext';
 import { WaitlistModal } from './components/ui/WaitlistModal';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { TermsOfService } from './pages/TermsOfService';
+
+type Page = 'home' | 'privacy' | 'terms';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState<Page>('home');
+
+  // Handle hash-based routing
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === '#privacy') {
+        setCurrentPage('privacy');
+      } else if (hash === '#terms') {
+        setCurrentPage('terms');
+      } else {
+        setCurrentPage('home');
+      }
+    };
+
+    // Check initial hash on mount
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const navigateToHome = () => {
+    window.location.hash = '';
+    setCurrentPage('home');
+    window.scrollTo(0, 0);
+  };
+
+  const navigateToPrivacy = () => {
+    window.location.hash = 'privacy';
+    setCurrentPage('privacy');
+    window.scrollTo(0, 0);
+  };
+
+  const navigateToTerms = () => {
+    window.location.hash = 'terms';
+    setCurrentPage('terms');
+    window.scrollTo(0, 0);
+  };
+
   return (
     <ThemeProvider>
       <WaitlistProvider>
@@ -24,20 +70,35 @@ function App() {
               <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-secondary/20 blur-[100px] animate-float" style={{ animationDelay: '-3s' }} />
            </div>
 
-          <div className="relative z-10 flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-grow">
-              <HeroSection />
-              <ProblemsSection />
-              <ValuePropSection />
-              <FeaturesSection />
-              <FirstBetaSection />
-              <HowItWorksSection />
-              <PrivacySection />
-              <CTASection />
-            </main>
-            <Footer />
-          </div>
+          {currentPage === 'home' && (
+            <div className="relative z-10 flex flex-col min-h-screen">
+              <Header />
+              <main className="flex-grow">
+                <HeroSection />
+                <ProblemsSection />
+                <ValuePropSection />
+                <FeaturesSection />
+                <FirstBetaSection />
+                <HowItWorksSection />
+                <PrivacySection />
+                <CTASection />
+              </main>
+              <Footer onNavigateToPrivacy={navigateToPrivacy} onNavigateToTerms={navigateToTerms} />
+            </div>
+          )}
+
+          {currentPage === 'privacy' && (
+            <div className="relative z-10">
+              <PrivacyPolicy onBack={navigateToHome} />
+            </div>
+          )}
+
+          {currentPage === 'terms' && (
+            <div className="relative z-10">
+              <TermsOfService onBack={navigateToHome} />
+            </div>
+          )}
+
           <WaitlistModal />
         </div>
       </WaitlistProvider>
