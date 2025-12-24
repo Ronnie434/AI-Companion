@@ -33,11 +33,11 @@ export const PrivacyPolicy = ({ onBack }: PrivacyPolicyProps) => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">1. Introduction</h2>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-              This Privacy Policy explains how AI Companion ("we," "us," or "our") collects, uses, and protects your information when you use our services, which include:
+              This Privacy Policy explains how Asteron ("we," "us," or "our") collects, uses, and protects your information when you use our services, which include:
             </p>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300 space-y-2 mb-4">
-              <li><strong>AI Companion Website</strong> (ai-companion-web) — Our marketing landing page and waitlist signup</li>
-              <li><strong>AI Companion Mobile App</strong> (ai-companion-app) — Our iOS and Android application</li>
+              <li><strong>Asteron Website</strong> (ai-companion-web) — Our marketing landing page and waitlist signup</li>
+              <li><strong>Asteron Mobile App</strong> (ai-companion-app) — Our iOS and Android application</li>
             </ul>
             <p className="text-zinc-600 dark:text-zinc-300">
               We are committed to protecting your privacy and being transparent about our data practices. This policy applies to all users of our website and mobile application.
@@ -49,7 +49,7 @@ export const PrivacyPolicy = ({ onBack }: PrivacyPolicyProps) => {
             
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">2.1 Website Waitlist Information</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-              When you sign up for our waitlist through the AI Companion website, we collect the following information:
+              When you sign up for our waitlist through the Asteron website, we collect the following information:
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="min-w-full border border-gray-200 dark:border-zinc-700 rounded-lg overflow-hidden">
@@ -87,7 +87,7 @@ export const PrivacyPolicy = ({ onBack }: PrivacyPolicyProps) => {
 
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">2.2 Mobile App Information</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-              The AI Companion mobile app stores all your data <strong>locally on your device</strong>. We do not have access to this data, and it is never transmitted to our servers. Information stored locally includes:
+              The Asteron mobile app stores all your data <strong>locally on your device</strong>. We do not have access to this data, and it is never transmitted to our servers. Information stored locally includes:
             </p>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300 space-y-2 mb-4">
               <li><strong>Task titles</strong> — Names you give to your tasks and items</li>
@@ -144,7 +144,7 @@ export const PrivacyPolicy = ({ onBack }: PrivacyPolicyProps) => {
             <p className="text-zinc-600 dark:text-zinc-300 mb-2">We use your waitlist information to:</p>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300 space-y-2 mb-6">
               <li>Add you to our launch notification list</li>
-              <li>Send you updates about AI Companion availability</li>
+              <li>Send you updates about Asteron availability</li>
               <li>Conduct user research to improve our product</li>
               <li>Analyze signup patterns to better understand our audience</li>
             </ul>
@@ -339,7 +339,7 @@ export const PrivacyPolicy = ({ onBack }: PrivacyPolicyProps) => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">8. Children's Privacy</h2>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-              AI Companion is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately using the information in Section 10.
+              Asteron is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately using the information in Section 10.
             </p>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
               If we discover that we have collected personal information from a child under 13, we will take steps to delete that information as quickly as possible.

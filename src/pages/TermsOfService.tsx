@@ -33,10 +33,10 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">1. Acceptance of Terms</h2>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-              By accessing or using AI Companion services, including our website (ai-companion-web) and mobile application (ai-companion-app), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our services.
+              By accessing or using Asteron services, including our website (ai-companion-web) and mobile application (ai-companion-app), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our services.
             </p>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-              These Terms constitute a legally binding agreement between you and AI Companion ("we," "us," or "our"). We may update these Terms from time to time as described in Section 15.
+              These Terms constitute a legally binding agreement between you and Asteron ("we," "us," or "our"). We may update these Terms from time to time as described in Section 15.
             </p>
             <p className="text-zinc-600 dark:text-zinc-300">
               Your continued use of our services after any changes to these Terms will constitute your acceptance of such changes.
@@ -46,15 +46,15 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">2. Description of Services</h2>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-              AI Companion provides productivity and task management services through two platforms:
+              Asteron provides productivity and task management services through two platforms:
             </p>
             
-            <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">2.1 AI Companion Website</h3>
+            <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">2.1 Asteron Website</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-2">
               Our website (ai-companion-web) is a marketing landing page that provides:
             </p>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300 space-y-2 mb-4">
-              <li>Information about the AI Companion mobile application</li>
+              <li>Information about the Asteron mobile application</li>
               <li>Feature descriptions and product showcase</li>
               <li>Waitlist signup with optional survey questions</li>
               <li>Dark and light theme viewing options</li>
@@ -63,7 +63,7 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
               The website does not require user accounts or authentication.
             </p>
 
-            <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">2.2 AI Companion Mobile App</h3>
+            <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">2.2 Asteron Mobile App</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
               Our mobile application (ai-companion-app) is available for iOS and Android devices and provides:
             </p>
@@ -120,7 +120,7 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
 
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">3. Eligibility</h2>
-            <p className="text-zinc-600 dark:text-zinc-300 mb-4">To use AI Companion services, you must:</p>
+            <p className="text-zinc-600 dark:text-zinc-300 mb-4">To use Asteron services, you must:</p>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300 space-y-2 mb-4">
               <li>Be at least <strong>13 years of age</strong></li>
               <li>Have the legal capacity to enter into these Terms</li>
@@ -138,7 +138,7 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">4. User Accounts</h2>
             
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">4.1 No Account Required</h3>
-            <p className="text-zinc-600 dark:text-zinc-300 mb-2">AI Companion operates without user accounts. This means:</p>
+            <p className="text-zinc-600 dark:text-zinc-300 mb-2">Asteron operates without user accounts. This means:</p>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300 space-y-2 mb-6">
               <li><strong>No registration</strong> — You do not need to create an account to use the mobile app</li>
               <li><strong>No passwords</strong> — There are no credentials to remember or recover</li>
@@ -162,7 +162,7 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">5. User Responsibilities</h2>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">
-              By using AI Companion, you agree to the following responsibilities:
+              By using Asteron, you agree to the following responsibilities:
             </p>
 
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">5.1 Device Security</h3>
@@ -173,7 +173,7 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
               <li>Keeping your device secure with a passcode, PIN, or biometric authentication</li>
               <li>Maintaining your device's operating system with security updates</li>
               <li>Protecting physical access to your device</li>
-              <li>Understanding that anyone with access to your unlocked device may access your AI Companion data</li>
+              <li>Understanding that anyone with access to your unlocked device may access your Asteron data</li>
             </ul>
 
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">5.2 Data Backup</h3>
@@ -210,7 +210,7 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
             
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">6.1 Ownership</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-2">
-              You retain full ownership of all content you create within AI Companion, including:
+              You retain full ownership of all content you create within Asteron, including:
             </p>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300 space-y-2 mb-4">
               <li>Tasks and reminders</li>
@@ -247,7 +247,7 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
             
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">7.1 AI Text Parsing</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-2">
-              AI Companion includes AI-powered text parsing features that attempt to:
+              Asteron includes AI-powered text parsing features that attempt to:
             </p>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300 space-y-2 mb-6">
               <li>Extract task titles from your input</li>
@@ -340,10 +340,10 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
             
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">9.1 Our Property</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-2">
-              AI Companion and all associated intellectual property are owned by us, including:
+              Asteron and all associated intellectual property are owned by us, including:
             </p>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300 space-y-2 mb-4">
-              <li>The AI Companion name and brand</li>
+              <li>The Asteron name and brand</li>
               <li>Logos, icons, and visual design</li>
               <li>App interface and user experience design</li>
               <li>Source code and software</li>
@@ -588,7 +588,7 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
             
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">17.1 Entire Agreement</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-6">
-              These Terms, together with our <button onClick={onBack} className="text-primary hover:text-primary-dark underline">Privacy Policy</button>, constitute the entire agreement between you and AI Companion regarding the services and supersede any prior agreements.
+              These Terms, together with our <button onClick={onBack} className="text-primary hover:text-primary-dark underline">Privacy Policy</button>, constitute the entire agreement between you and Asteron regarding the services and supersede any prior agreements.
             </p>
 
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">17.2 Severability</h3>
