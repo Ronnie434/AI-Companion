@@ -4,10 +4,10 @@
 
 ## 1. Introduction
 
-This Privacy Policy explains how AI Companion ("we," "us," or "our") collects, uses, and protects your information when you use our services, which include:
+This Privacy Policy explains how Asteron ("we," "us," or "our") collects, uses, and protects your information when you use our services, which include:
 
-- **AI Companion Website** (ai-companion-web) — Our marketing landing page and waitlist signup
-- **AI Companion Mobile App** (ai-companion-app) — Our iOS and Android application
+- **Asteron Website** (ai-companion-web) — Our marketing landing page and waitlist signup
+- **Asteron Mobile App** (ai-companion-app) — Our iOS and Android application
 
 We are committed to protecting your privacy and being transparent about our data practices. This policy applies to all users of our website and mobile application.
 
@@ -15,7 +15,7 @@ We are committed to protecting your privacy and being transparent about our data
 
 ### 2.1 Website Waitlist Information
 
-When you sign up for our waitlist through the AI Companion website, we collect the following information:
+When you sign up for our waitlist through the Asteron website, we collect the following information:
 
 | Information | Required | Purpose |
 |-------------|----------|---------|
@@ -26,7 +26,7 @@ When you sign up for our waitlist through the AI Companion website, we collect t
 
 ### 2.2 Mobile App Information
 
-The AI Companion mobile app stores all your data **locally on your device**. We do not have access to this data, and it is never transmitted to our servers. Information stored locally includes:
+The Asteron mobile app stores all your data **locally on your device**. We do not have access to this data, and it is never transmitted to our servers. Information stored locally includes:
 
 - **Task titles** — Names you give to your tasks and items
 - **Task details** — Optional additional notes you add
@@ -57,7 +57,7 @@ When you visit our website, certain information is collected automatically:
 We use your waitlist information to:
 
 - Add you to our launch notification list
-- Send you updates about AI Companion availability
+- Send you updates about Asteron availability
 - Conduct user research to improve our product
 - Analyze signup patterns to better understand our audience
 
@@ -173,7 +173,7 @@ We believe in privacy-first design. Our commitments to you:
 
 ## 8. Children's Privacy
 
-AI Companion is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately using the information in Section 10.
+Asteron is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately using the information in Section 10.
 
 If we discover that we have collected personal information from a child under 13, we will take steps to delete that information as quickly as possible.
 

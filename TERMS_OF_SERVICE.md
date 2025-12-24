@@ -4,28 +4,28 @@
 
 ## 1. Acceptance of Terms
 
-By accessing or using AI Companion services, including our website (ai-companion-web) and mobile application (ai-companion-app), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our services.
+By accessing or using Asteron services, including our website (ai-companion-web) and mobile application (ai-companion-app), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our services.
 
-These Terms constitute a legally binding agreement between you and AI Companion ("we," "us," or "our"). We may update these Terms from time to time as described in Section 15.
+These Terms constitute a legally binding agreement between you and Asteron ("we," "us," or "our"). We may update these Terms from time to time as described in Section 15.
 
 Your continued use of our services after any changes to these Terms will constitute your acceptance of such changes.
 
 ## 2. Description of Services
 
-AI Companion provides productivity and task management services through two platforms:
+Asteron provides productivity and task management services through two platforms:
 
-### 2.1 AI Companion Website
+### 2.1 Asteron Website
 
 Our website (ai-companion-web) is a marketing landing page that provides:
 
-- Information about the AI Companion mobile application
+- Information about the Asteron mobile application
 - Feature descriptions and product showcase
 - Waitlist signup with optional survey questions
 - Dark and light theme viewing options
 
 The website does not require user accounts or authentication.
 
-### 2.2 AI Companion Mobile App
+### 2.2 Asteron Mobile App
 
 Our mobile application (ai-companion-app) is available for iOS and Android devices and provides:
 
@@ -44,7 +44,7 @@ Our mobile application (ai-companion-app) is available for iOS and Android devic
 
 ## 3. Eligibility
 
-To use AI Companion services, you must:
+To use Asteron services, you must:
 
 - Be at least **13 years of age**
 - Have the legal capacity to enter into these Terms
@@ -58,7 +58,7 @@ We do not knowingly collect information from or provide services to children und
 
 ### 4.1 No Account Required
 
-AI Companion operates without user accounts. This means:
+Asteron operates without user accounts. This means:
 
 - **No registration** — You do not need to create an account to use the mobile app
 - **No passwords** — There are no credentials to remember or recover
@@ -78,7 +78,7 @@ The waitlist signup on our website requires only an email address and survey res
 
 ## 5. User Responsibilities
 
-By using AI Companion, you agree to the following responsibilities:
+By using Asteron, you agree to the following responsibilities:
 
 ### 5.1 Device Security
 
@@ -87,7 +87,7 @@ Since your data is stored locally on your device, you are responsible for:
 - Keeping your device secure with a passcode, PIN, or biometric authentication
 - Maintaining your device's operating system with security updates
 - Protecting physical access to your device
-- Understanding that anyone with access to your unlocked device may access your AI Companion data
+- Understanding that anyone with access to your unlocked device may access your Asteron data
 
 ### 5.2 Data Backup
 
@@ -121,7 +121,7 @@ You agree not to use our services to:
 
 ### 6.1 Ownership
 
-You retain full ownership of all content you create within AI Companion, including:
+You retain full ownership of all content you create within Asteron, including:
 
 - Tasks and reminders
 - Notes and descriptions
@@ -152,7 +152,7 @@ Since your content never leaves your device, we have no ability to monitor, revi
 
 ### 7.1 AI Text Parsing
 
-AI Companion includes AI-powered text parsing features that attempt to:
+Asteron includes AI-powered text parsing features that attempt to:
 
 - Extract task titles from your input
 - Identify dates and times
@@ -226,9 +226,9 @@ All notifications are generated and delivered locally on your device. We do not:
 
 ### 9.1 Our Property
 
-AI Companion and all associated intellectual property are owned by us, including:
+Asteron and all associated intellectual property are owned by us, including:
 
-- The AI Companion name and brand
+- The Asteron name and brand
 - Logos, icons, and visual design
 - App interface and user experience design
 - Source code and software
@@ -422,7 +422,7 @@ We will respond to your inquiry within a reasonable timeframe.
 
 ### 17.1 Entire Agreement
 
-These Terms, together with our [Privacy Policy](PRIVACY_POLICY.md), constitute the entire agreement between you and AI Companion regarding the services and supersede any prior agreements.
+These Terms, together with our [Privacy Policy](PRIVACY_POLICY.md), constitute the entire agreement between you and Asteron regarding the services and supersede any prior agreements.
 
 ### 17.2 Severability
 

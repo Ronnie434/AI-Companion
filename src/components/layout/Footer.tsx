@@ -25,7 +25,7 @@ export const Footer = ({ onNavigateToPrivacy, onNavigateToTerms }: FooterProps) 
         </div>
         {/* Copyright */}
         <p className="text-center text-sm font-light text-gray-600 dark:text-muted-foreground">
-          © 2025 AI Companion. All rights reserved.
+          © 2025 Asteron. All rights reserved.
         </p>
       </div>
     </footer>

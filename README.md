@@ -101,4 +101,4 @@ src/
 
 ## License
 
-© 2025 AI Companion. All rights reserved.
+© 2025 Asteron. All rights reserved.
