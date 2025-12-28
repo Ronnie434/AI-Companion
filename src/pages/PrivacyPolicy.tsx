@@ -1,22 +1,19 @@
+import { Link } from 'react-router-dom';
 import Icon from '../components/ui/Icon';
 
-interface PrivacyPolicyProps {
-  onBack: () => void;
-}
-
-export const PrivacyPolicy = ({ onBack }: PrivacyPolicyProps) => {
+export const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background-light dark:bg-background-dark">
       {/* Sticky Header */}
       <div className="sticky top-0 z-50 border-b border-gray-200 dark:border-white/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-lg">
         <div className="mx-auto max-w-4xl px-6 py-4">
-          <button
-            onClick={onBack}
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
           >
             <Icon name="arrow_back" size={16} />
             Back to Home
-          </button>
+          </Link>
         </div>
       </div>
 

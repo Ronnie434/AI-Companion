@@ -1,22 +1,19 @@
+import { Link } from 'react-router-dom';
 import Icon from '../components/ui/Icon';
 
-interface TermsOfServiceProps {
-  onBack: () => void;
-}
-
-export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
+export const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-background-light dark:bg-background-dark">
       {/* Sticky Header */}
       <div className="sticky top-0 z-50 border-b border-gray-200 dark:border-white/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-lg">
         <div className="mx-auto max-w-4xl px-6 py-4">
-          <button
-            onClick={onBack}
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
           >
             <Icon name="arrow_back" size={16} />
             Back to Home
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -588,7 +585,7 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
             
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">17.1 Entire Agreement</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-6">
-              These Terms, together with our <button onClick={onBack} className="text-primary hover:text-primary-dark underline">Privacy Policy</button>, constitute the entire agreement between you and Asteron regarding the services and supersede any prior agreements.
+              These Terms, together with our <Link to="/privacy" className="text-primary hover:text-primary-dark underline">Privacy Policy</Link>, constitute the entire agreement between you and Asteron regarding the services and supersede any prior agreements.
             </p>
 
             <h3 className="text-xl font-medium text-zinc-900 dark:text-white mb-3">17.2 Severability</h3>
@@ -668,12 +665,12 @@ export const TermsOfService = ({ onBack }: TermsOfServiceProps) => {
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">Related Documents</h2>
             <ul className="list-disc pl-6 text-zinc-600 dark:text-zinc-300">
               <li>
-                <button 
-                  onClick={onBack} 
+                <Link
+                  to="/privacy"
                   className="text-primary hover:text-primary-dark underline"
                 >
                   Privacy Policy
-                </button>
+                </Link>
               </li>
             </ul>
           </section>
