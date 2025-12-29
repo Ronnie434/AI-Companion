@@ -11,6 +11,16 @@ export interface Screenshot {
 
 export const screenshots: Screenshot[] = [
   {
+    id: 'home',
+    src: {
+      dark: '/screenshots/dark/home-dark.png',
+      light: '/screenshots/light/home-light.png',
+    },
+    alt: 'Home screen with AI assistant greeting',
+    label: 'Home',
+    description: 'Your AI assistant, ready when you are',
+  },
+  {
     id: 'chat',
     src: {
       dark: '/screenshots/dark/chat-dark.png',

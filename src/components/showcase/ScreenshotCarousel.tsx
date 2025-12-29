@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, AnimatePresence, type PanInfo } from 'framer-motion';
+import { motion, AnimatePresence, type PanInfo, type Variants } from 'framer-motion';
 import { PhoneFrame } from './PhoneFrame';
 import type { Screenshot } from '../../data/screenshots';
 
@@ -12,7 +12,7 @@ interface ScreenshotCarouselProps {
   className?: string;
 }
 
-const slideVariants = {
+const slideVariants: Variants = {
   enter: (direction: number) => ({
     x: direction > 0 ? 400 : -400,
     opacity: 0,
@@ -48,7 +48,7 @@ const floatVariants = {
     transition: {
       duration: 5,
       repeat: Infinity,
-      ease: 'easeInOut',
+      ease: 'easeInOut' as const,
     },
   },
 };

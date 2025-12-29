@@ -17,7 +17,7 @@ const containerVariants = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: [0.32, 0.72, 0, 1],
+      ease: [0.32, 0.72, 0, 1] as const,
       staggerChildren: 0.15,
     },
   },
